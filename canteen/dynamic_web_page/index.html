@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>student name manager </h1>
+    <input id="name"type="text"placeholder="type your name...">
+    <button onclick="addUser()">Add Student</button>
+</body>
+</html>
+<script>
+    let students = [];
+    function addStudent() {
+    let input = document.getElementById("studentInput");
+    let name = input.value.trim();
+
+    if (name !== "") {
+    students.push(name);
+    input.value = "";
+    showList();
+    }
+</script>
